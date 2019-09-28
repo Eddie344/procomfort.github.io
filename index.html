@@ -128,63 +128,249 @@
 
 	<main class="row justify-content-end mt-5">
         <div class="col-md-10 px-5 py-5">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="card">
-						<div class="card-header">
-							Информация об изделиях
+        	<ul class="nav nav-tabs" id="myTab" role="tablist">
+			  <li class="nav-item">
+			    <a class="nav-link active" id="tab1" data-toggle="tab" href="#content-tab1" role="tab" aria-controls="content-tab1" aria-selected="true">Информация об изделиях</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="tab2" data-toggle="tab" href="#content-tab2" role="tab" aria-controls="content-tab2" aria-selected="false">Запросы на отправку</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="tab3" data-toggle="tab" href="#content-tab3" role="tab" aria-controls="content-tab3" aria-selected="false">Сроки изготовления</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="tab4" data-toggle="tab" href="#content-tab4" role="tab" aria-controls="content-tab4" aria-selected="false">Недостающая комплектация</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="tab5" data-toggle="tab" href="#content-tab5" role="tab" aria-controls="content-tab5" aria-selected="false">План</a>
+			  </li>
+			</ul>
+			<div class="tab-content mt-4" id="myTabContent">
+			  <div class="tab-pane fade show active" id="content-tab1" role="tabpanel" aria-labelledby="tab1">
+			  	<table class="table table-hover">
+				  <thead>
+				    <tr>
+				      <th scope="col">Изделие</th>
+				      <th scope="col">Ожидает проверки</th>
+				      <th scope="col">Приостановлен</th>
+				      <th scope="col">В работе</th>
+				      <th scope="col">Выполнен</th>
+				      <th scope="col">Отправлен</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row">Рулонные</th>
+				      <td>12</td>
+				      <td>2</td>
+				      <td>18</td>
+				      <td>16</td>
+				      <td>126</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Зебра</th>
+				      <td>12</td>
+				      <td>2</td>
+				      <td>18</td>
+				      <td>16</td>
+				      <td>126</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Горизонтальные</th>
+				      <td>12</td>
+				      <td>2</td>
+				      <td>18</td>
+				      <td>16</td>
+				      <td>126</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Вертикальные</th>
+				      <td>12</td>
+				      <td>2</td>
+				      <td>18</td>
+				      <td>16</td>
+				      <td>126</td>
+				    </tr>
+				  </tbody>
+				</table>
+			  </div>
+			  <div class="tab-pane fade" id="content-tab2" role="tabpanel" aria-labelledby="tab2">
+			  	<table class="table table-hover">
+				  <thead>
+				    <tr>
+				      <th scope="col">№</th>
+				      <th scope="col">Заказчик</th>
+				      <th scope="col">Префикс заказчика</th>
+				      <th scope="col">Вид изделий</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row"><a href="order_1.html">121</a></th>
+				      <td><a href="customer_1.html">Александр Гоев</a></td>
+				      <td>12</td>
+				      <td>Вертикальные</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">231</th>
+				      <td><a href="">Дмитрий Николаев</a></td>
+				      <td>16В</td>
+				      <td>Рулонные Mini</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">331</th>
+				      <td><a href="">Кирилл Данилов</a></td>
+				      <td>54</td>
+				      <td>Зебра UNI-2</td>
+				    </tr>
+				  </tbody>
+				</table>
+			  </div>
+			  <div class="tab-pane fade" id="content-tab3" role="tabpanel" aria-labelledby="tab3">
+			  	<table class="table table-hover col-md-6">
+				  <thead>
+				    <tr>
+				      <th scope="col">Изделие</th>
+				      <th scope="col">Срок изготовления, дней</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td>Рулонные</td>
+				      <td>4</td>
+				    </tr>
+				    <tr>
+				      <td>Зебра</td>
+				      <td>4</td>
+				    </tr>
+				    <tr>
+				      <td>Горизонтальные</td>
+				      <td>3</td>
+				    </tr>
+				    <tr>
+				      <td>Вертикальные</td>
+				      <td>2</td>
+				    </tr>
+				  </tbody>
+				</table>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#term_edit">
+					Изменить 
+				</button>
+				<!-- Modal -->
+				<div class="modal fade" id="term_edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				  <div class="modal-dialog modal-sm" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLongTitle">Изменить сроки изготовления</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				       	<div class="form-group">
+				       		<label for="exampleInputEmail1">Рулонные</label>
+						    <input type="number" class="form-control" value="4">
 						</div>
-						<div class="card-body">
-							<table class="table table-hover">
-							  <thead>
-							    <tr>
-							      <th scope="col">Изделие</th>
-							      <th scope="col">Ожидает проверки</th>
-							      <th scope="col">Приостановлен</th>
-							      <th scope="col">В работе</th>
-							      <th scope="col">Выполнен</th>
-							      <th scope="col">Отправлен</th>
-							    </tr>
-							  </thead>
-							  <tbody>
-							    <tr>
-							      <th scope="row">Рулонные</th>
-							      <td>12</td>
-							      <td>2</td>
-							      <td>18</td>
-							      <td>16</td>
-							      <td>126</td>
-							    </tr>
-							    <tr>
-							      <th scope="row">Зебра</th>
-							      <td>12</td>
-							      <td>2</td>
-							      <td>18</td>
-							      <td>16</td>
-							      <td>126</td>
-							    </tr>
-							    <tr>
-							      <th scope="row">Горизонтальные</th>
-							      <td>12</td>
-							      <td>2</td>
-							      <td>18</td>
-							      <td>16</td>
-							      <td>126</td>
-							    </tr>
-							    <tr>
-							      <th scope="row">Вертикальные</th>
-							      <td>12</td>
-							      <td>2</td>
-							      <td>18</td>
-							      <td>16</td>
-							      <td>126</td>
-							    </tr>
-							  </tbody>
-							</table>
+						<div class="form-group">
+				       		<label for="exampleInputEmail1">Зебра</label>
+						    <input type="number" class="form-control" value="4">
 						</div>
-					</div>
+						<div class="form-group">
+				       		<label for="exampleInputEmail1">Горизонтальные</label>
+						    <input type="number" class="form-control" value="3">
+						</div>
+						<div class="form-group">
+				       		<label for="exampleInputEmail1">Вертикальные</label>
+						    <input type="number" class="form-control" value="2">
+						</div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-primary">Сохранить</button>
+				      </div>
+				    </div>
+				  </div>
 				</div>
+			  </div>
+			  <div class="tab-pane fade" id="content-tab4" role="tabpanel" aria-labelledby="tab4">
+			  	<table class="table table-hover">
+				  <thead>
+				    <tr>
+				      <th scope="col">Наименование</th>
+				      <th scope="col">Изделие</th>
+				      <th scope="col">Количество</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td><a href="roll_fabric_1.html">L-0800</a></td>
+				      <td>Рулонные</td>
+				      <td>12 м</td>
+				    </tr>
+				    <tr>
+				      <td><a href="vert_fabric_1.html">Лайн белый</a></td>
+				      <td>Вертикальные</td>
+				      <td>85 м</td>
+				    </tr>
+				    <tr>
+				      <td><a href="goriz_fabric_1.html">1020</a></td>
+				      <td>Горизонтальные</td>
+				      <td>54 м</td>
+				    </tr>
+				    <tr>
+				      <td><a href="metal_1.html">Направляющие алюминиевые белые</a></td>
+				      <td>Рулонные</td>
+				      <td>28 м</td>
+				    </tr>
+				    <tr>
+				      <td><a href="furn_1.html">Заглушки белые</a></td>
+				      <td>Рулонные</td>
+				      <td>12 шт</td>
+				    </tr>
+				  </tbody>
+				</table>
+			  </div>
+			  <div class="tab-pane fade" id="content-tab5" role="tabpanel" aria-labelledby="tab5">
+			  	<table class="table table-hover">
+				  <thead>
+				    <tr>
+				      <th scope="col">№</th>
+				      <th scope="col">Заказчик</th>
+				      <th scope="col">Префикс заказчика</th>
+				      <th scope="col">Вид изделий</th>
+				      <th scope="col">Статус</th>
+				      <th scope="col">Дата отправки</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row"><a href="order_1.html">121</a></th>
+				      <td><a href="customer_1.html">Александр Гоев</a></td>
+				      <td>12</td>
+				      <td>Вертикальные</td>
+				      <td class="table-warning">В работе</td>
+				      <td>28.09.2019</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">231</th>
+				      <td><a href="">Дмитрий Николаев</a></td>
+				      <td>16В</td>
+				      <td>Рулонные Mini</td>
+				      <td class="table-warning">В работе</td>
+				      <td>28.09.2019</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">331</th>
+				      <td><a href="">Кирилл Данилов</a></td>
+				      <td>54</td>
+				      <td>Зебра UNI-2</td>
+				      <td class="table-success">Выполнен</td>
+				      <td>28.09.2019</td>
+				    </tr>
+				  </tbody>
+				</table>
+			  </div>
 			</div>
+			
 
         </div>
     </main>
