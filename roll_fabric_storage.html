@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap shadow">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/admin">ProComfort</a>
+		<input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+	    <div class="dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	        	<i class="fa fa-user"></i>Николай
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#"><i class="fa fa-cog"></i>Настройки</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#"><i class="fa fa-arrow-up"></i>Выйти</a>
+	        </div>
+	    </div>
+	</nav>
+	<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      	<div class="sidebar-sticky">
+            <div class="nav flex-column">
+                <div class="accordion" id="sidebar-accordion">
+
+                    <div class="card">
+						<a href="#" class="card-header">
+                            <span><i class="fa fa-home"></i>Главная</span>
+                        </a>
+                    </div>
+
+                    <div class="card">
+						<a href="orders.html" class="card-header">
+                            <span><i class="fa fa-clipboard"></i>Заказы</span>
+                           	<span class="badge badge-primary py-2">4</span>
+                        </a>
+                    </div>
+
+                    <div class="card">
+						<a href="customers.html" class="card-header">
+                            <span><i class="fa fa-users"></i>Заказчики</span>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card-header" id="heading3" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                            <span><i class="fa fa-th-list"></i>Склад</span>
+                        </a>
+                        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#sidebar-accordion">
+                            <div class="list-group">
+                                <a class="list-group-item" href="roll_fabric_storage.html">Ткани рулонные</a>
+                                <a class="list-group-item" href="#">Ткани зебра</a>
+                                <a class="list-group-item" href="vert_fabric_storage.html">Ткани вертикальные</a>
+                                <a class="list-group-item" href="goriz_fabric_storage.html">Лента горизонтальная</a>
+                                <a class="list-group-item" href="metal_storage.html">Металл</a>
+                                <a class="list-group-item" href="furn_storage.html">Фурнитура</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                    	<div class="accordion" id="sidebar-prices">
+	                        <a href="#" class="card-header" id="heading4" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+	                            <span><i class="fa fa-money"></i>Прайсы</span>
+	                        </a>
+	                        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#sidebar-prices">
+	                            <div class="list-group">
+	                            	<a href="#" class="list-group-item" id="heading5" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+			                            Рулонные шторы
+			                        </a>
+			                        <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#sidebar-accordion">
+			                            <div class="list-group">
+			                                <a class="list-group-item price-padding" href="price_roll_mini.html">Mini</a>
+			                                <a class="list-group-item price-padding" href="#">UNI-1</a>
+			                                <a class="list-group-item price-padding" href="#">UNI-2</a>
+			                                <a class="list-group-item price-padding" href="#">D-25</a>
+			                            </div>
+			                        </div>
+
+			                        <a href="#" class="list-group-item" id="heading6" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+			                            Зебра
+			                        </a>
+			                        <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#sidebar-accordion">
+			                            <div class="list-group">
+			                                <a class="list-group-item price-padding" href="#">Mini</a>
+			                                <a class="list-group-item price-padding" href="#">UNI-1</a>
+			                                <a class="list-group-item price-padding" href="#">UNI-2</a>
+			                                <a class="list-group-item price-padding" href="#">MGS</a>
+			                            </div>
+			                        </div>
+	                                <a class="list-group-item" href="price_vert.html">Вертикальные жалюзи</a>
+	                                <a class="list-group-item" href="price_goriz.html">Горизонтальные жалюзи</a>
+	                                <a class="list-group-item" href="price_dop.html">Дополнительная комплектация</a>
+	                            </div>
+	                        </div>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+	<main class="row justify-content-end mt-5">
+        <div class="col-md-10 px-5 py-5">
+			<h2 class="mb-4">Ткани рулонные</h2>
+			<div class="row mb-2">
+				<div class="form-group col-md-3">
+				    <select class="form-control" id="exampleFormControlSelect1">
+				      <option>Выберите каталог...</option>
+				      <option>Амиго</option>
+				      <option>Межароль</option>
+				      <option>Прокомфорт</option>
+				      <option>Амилюкс</option>
+				      <option>Гарден</option>
+				    </select>
+			  	</div>
+				<div class="input-group mb-3 col-md-3">
+				  <input type="text" class="form-control" placeholder="Поиск ткани" aria-label="Recipient's username" aria-describedby="button-addon2">
+				  <div class="input-group-append">
+				    <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+				  </div>
+				</div>
+				<!-- Button trigger modal -->
+				<div class="input-group mb-3 col-md-3">
+					<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
+					  Добавить +
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLongTitle">Добавление пункта</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					       	<div class="form-group">
+							    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Наименование">
+							</div>
+							<div class="form-group">
+							    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Цвет">
+							</div>
+							<div class="form-group">
+							    <select class="form-control" id="exampleFormControlSelect1">
+							      <option>Каталог...</option>
+							      <option>Амиго</option>
+							      <option>Межароль</option>
+							      <option>Прокомфорт</option>
+							      <option>Амилюкс</option>
+							      <option>Гарден</option>
+							    </select>
+							</div>
+							<div class="form-group">
+							    <select class="form-control" id="exampleFormControlSelect1">
+							      <option>Категория...</option>
+							      <option>1</option>
+							      <option>2</option>
+							      <option>3</option>
+							      <option>4</option>
+							      <option>5</option>
+							    </select>
+							</div>
+							<div class="form-group">
+							    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ширина">
+							</div>
+							<div class="form-group">
+							    <select class="form-control" id="exampleFormControlSelect1">
+							      <option>Направление рисунка...</option>
+							      <option>Вертикальное</option>
+							      <option>Горизонтальне</option>
+							      <option>Любое</option>
+							    </select>
+							</div>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-primary">Сохранить</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<table class="table table-hover">
+			  <thead>
+			    <tr>
+			      <th scope="col">#</th>
+			      <th scope="col">Наименование</th>
+			      <th scope="col">Каталог</th>
+			      <th scope="col">Категория</th>
+			      <th scope="col">Ширина</th>
+			      <th scope="col">Направление рисунка</th>
+			      <th scope="col">Действия</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td><a href="roll_fabric_1.html">L-0800</a></td>
+			      <td>Амиго</td>
+			      <td>1</td>
+			      <td>1,6</td>
+			      <td>Горизонтальное</td>
+			      <td>
+
+			      	<a href="" data-toggle="modal" data-target="#modalDelete"><h5 class="d-inline"><i class="fa fa-trash-o text-danger"></i></h5></a>
+			      	<div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLongTitle">Вы уверены?</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-danger">Удалить</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			      </td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td><a href="">L-0810</a></td>
+			      <td>Амиго</td>
+			      <td>1</td>
+			      <td>1,6</td>
+			      <td>Вертикальное</td>
+			      <td>
+			      	<a href=""><h5 class="d-inline"><i class="fa fa-trash-o text-danger"></i></h5></a>
+			      </td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td><a href="">L-0868</a></td>
+			      <td>Амиго</td>
+			      <td>1</td>
+			      <td>1,6</td>
+			      <td>Любое</td>
+			      <td>
+			      	<a href=""><h5 class="d-inline"><i class="fa fa-trash-o text-danger"></i></h5></a>
+			      </td>
+			    </tr>
+			  </tbody>
+			</table>
+			<nav aria-label="Page navigation example">
+			  <ul class="pagination">
+			    <li class="page-item">
+			      <a class="page-link" href="#" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+			    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+			    <li class="page-item"><a class="page-link" href="#">2</a></li>
+			    <li class="page-item"><a class="page-link" href="#">3</a></li>
+			    <li class="page-item">
+			      <a class="page-link" href="#" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+			  </ul>
+			</nav>
+        </div>
+    </main>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script src="js/scripts.min.js"></script>
+
+
+</body>
+</html>

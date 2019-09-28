@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap shadow">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/admin">ProComfort</a>
+		<input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+	    <div class="dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	        	<i class="fa fa-user"></i>Николай
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#"><i class="fa fa-cog"></i>Настройки</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#"><i class="fa fa-arrow-up"></i>Выйти</a>
+	        </div>
+	    </div>
+	</nav>
+	<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      	<div class="sidebar-sticky">
+            <div class="nav flex-column">
+                <div class="accordion" id="sidebar-accordion">
+
+                    <div class="card">
+						<a href="#" class="card-header">
+                            <span><i class="fa fa-home"></i>Главная</span>
+                        </a>
+                    </div>
+
+                    <div class="card">
+						<a href="#" class="card-header" id="heading1" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                           	<span><i class="fa fa-clipboard"></i>Заказы</span>
+                           	<span class="badge badge-primary py-2">4</span>
+                        </a>
+
+                        <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#sidebar-accordion">
+                            <div class="list-group">
+                                <a class="list-group-item" href="#">Все заказы</a>
+                                <a class="list-group-item" href="#">Добавить заказ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+						<a href="customers.html" class="card-header">
+                            <span><i class="fa fa-users"></i>Заказчики</span>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card-header" id="heading3" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                            <span><i class="fa fa-th-list"></i>Склад</span>
+                        </a>
+                        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#sidebar-accordion">
+                            <div class="list-group">
+                                <a class="list-group-item" href="roll_fabric_storage.html">Ткани рулонные</a>
+                                <a class="list-group-item" href="#">Ткани зебра</a>
+                                <a class="list-group-item" href="vert_fabric_storage.html">Ткани вертикальные</a>
+                                <a class="list-group-item" href="goriz_fabric_storage.html">Лента горизонтальная</a>
+                                <a class="list-group-item" href="metal_storage.html">Металл</a>
+                                <a class="list-group-item" href="furn_storage.html">Фурнитура</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+	<main class="row justify-content-end mt-5">
+        <div class="col-md-10 px-5 py-5">
+				<div class="row mb-3">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header">
+								Общая информация
+							</div>
+							<div class="card-body">
+								<dl class="row">
+									<dt class="col-sm-6">Наименование:</dt>
+								  	<dd class="col-sm-6"><h4>1030</h4></dd>
+
+								  	<dt class="col-sm-6">Цвет:</dt>
+								  	<dd class="col-sm-6">Белый</dd>
+
+								  	<dt class="col-sm-6">Каталог:</dt>
+								  	<dd class="col-sm-6">Амиго</dd>
+
+								  	<dt class="col-sm-6">Категория:</dt>
+								  	<dd class="col-sm-6">1</dd>
+
+							    	<dt class="col-sm-6">Дата поступления на склад:</dt>
+								  	<dd class="col-sm-6">12.09.2019</dd>
+
+								</dl>
+								<button type="button" class="btn btn-primary my-1" data-toggle="modal" data-target="#order_edit">
+									Изменить информацию 
+								</button>
+								<button type="button" class="btn btn-success my-1" data-toggle="modal" data-target="#add-part">
+								  Добавить партию
+								</button>
+
+								<div class="modal fade" id="order_edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalLongTitle">Редактирование</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+								       	<div class="form-group">
+								       		<label for="exampleInputEmail1">Наименование:</label>
+										    <input type="text" class="form-control" id="exampleFormControlInput1" value="1030">
+										</div>
+										<div class="form-group">
+								       		<label for="exampleInputEmail1">Цвет:</label>
+										    <input type="text" class="form-control" id="exampleFormControlInput1" value="Белый">
+										</div>
+										<div class="form-group">
+											<label for="exampleInputEmail1">Каталог:</label>
+										    <select class="form-control" id="exampleFormControlSelect1">
+										      <option selected>Амиго</option>
+										      <option>Межароль</option>
+										      <option>Прокомфорт</option>
+										      <option>Амилюкс</option>
+										      <option>Гарден</option>
+										    </select>
+										</div>
+										<div class="form-group">
+											<label for="exampleInputEmail1">Категория:</label>
+										    <select class="form-control" id="exampleFormControlSelect1">
+										      <option selected>1</option>
+										      <option>2</option>
+										      <option>3</option>
+										      <option>4</option>
+										      <option>5</option>
+										    </select>
+										</div>
+										<div class="form-group">
+								       		<label for="exampleInputEmail1">Дата поступления на склад:</label>
+										    <input type="text" name="date_single" class="form-control" value="12-09-2019">
+										</div>
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-primary">Сохранить</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+				
+								<!-- Modal-1 -->
+								<div class="modal fade" id="add-part" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalLongTitle">Добавление партии</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+										<div class="form-group">
+										    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Цена">
+										</div>
+										<div class="form-group">
+										    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Длина">
+										</div>
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-primary">Добавить</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+
+								<!-- Modal-3 -->
+								<div class="modal fade" id="minus" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalLongTitle">Списание остатка</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+								       	<div class="form-group">
+										    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Длина">
+										</div>
+										<div class="form-group">
+										    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Причина">
+										</div>
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-primary">Списать</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<table class="table table-hover col-md-6">
+				  <thead>
+				    <tr>
+				      <th scope="col">Цена</th>
+				      <th scope="col">Длина</th>
+				      <th scope="col">Статус</th>
+				      <th scope="col">Действие</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td>1,3 $</td>
+				      <td>126 м</td>
+				      <td class="table-primary">В работе</td>
+				      <td><a href="#" data-toggle="modal" data-target="#minus">Списать</a></td>
+				    <tr>
+				   	<tr>
+				      <td>1,6 $</td>
+				      <td>200 м</td>
+				      <td class="table-warning">Ожидание</td>
+				    <tr>
+
+				  </tbody>
+				</table>
+				
+				<div class="mt-5 mb-3">
+					<div class="operations mb-2 d-flex flex-row align-items-center justify-content-between">
+						<h4>Операции</h4>
+						<form>
+							<div class="input-group">
+							  <input type="text" name="date_period" class="form-control" id="exampleInputPassword1" placeholder="Сортировка по датам">
+							  <div class="input-group-append">
+							    <button class="btn btn-primary" type="button" id="button-addon2">Показать</button>
+							  </div>
+							</div>
+						</form>
+						<ul class="list-group list-group-horizontal">
+						  <li class="list-group-item list-group-item-success">Приход: <strong>156 м</strong></li>
+						  <li class="list-group-item list-group-item-danger">Расход: <strong>65 м</strong></li>
+						</ul>
+					</div>
+					<table class="table table-hover">
+					  <thead>
+					    <tr>
+					      <th scope="col">#</th>
+					      <th scope="col">Действие</th>
+					      <th scope="col">Причина</th>
+					      <th scope="col">Пользователь</th>
+					      <th scope="col">Длина</th>
+					      <th scope="col">Дата</th>
+					      <th scope="col">Время</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row">1</th>
+					      <td class="table-danger">Списание</td>
+					      <td>Заказ №32</td>
+					      <td>КФ</td>
+					      <td>12,3</td>
+					      <td>28.08.19</td>
+					      <td>12:50</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">2</th>
+					      <td class="table-danger">Списание</td>
+					      <td>Заказ №32</td>
+					      <td>КФ</td>
+					      <td>33,6</td>
+					      <td>28.08.19</td>
+					      <td>12:50</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">3</th>
+					      <td class="table-danger">Списание</td>
+					      <td>Заказ №32</td>
+					      <td>КФ</td>
+					      <td>56</td>
+					      <td>28.08.19</td>
+					      <td>12:50</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">4</th>
+					      <td class="table-danger">Списание</td>
+					      <td>Брак</td>
+					      <td>Сергей</td>
+					      <td>20</td>
+					      <td>28.08.19</td>
+					      <td>12:50</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">5</th>
+					      <td class="table-success">Пополнение</td>
+					      <td>Партия</td>
+					      <td>Саша</td>
+					      <td>250</td>
+					      <td>28.08.19</td>
+					      <td>12:50</td>
+					    </tr>
+					  </tbody>
+					</table>
+					<nav aria-label="Page navigation example">
+					  <ul class="pagination">
+					    <li class="page-item">
+					      <a class="page-link" href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+					    <li class="page-item"><a class="page-link" href="#">2</a></li>
+					    <li class="page-item"><a class="page-link" href="#">3</a></li>
+					    <li class="page-item">
+					      <a class="page-link" href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>
+				</div>
+
+			
+
+
+
+			<!-- <div class="card" style="width: 24rem;">
+				<div class="card-header">
+					<h3 class="card-title">L-156</h3>
+			    	<p class="card-text text-muted">Каталог: Амиго</p>
+			  	</div>
+			  	<div class="card-body">
+					
+					<dl class="row">
+					  <dt class="col-sm-5">Ширина ткани:</dt>
+					  <dd class="col-sm-7">
+						<div class="dropdown">
+						  <button class="btn btn-link dropdown-toggle p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    1,6 м
+						  </button>
+						  <div class="dropdown-menu bg-light" aria-labelledby="dropdownMenuButton">
+						  	<h6 class="dropdown-header">Введите новый размер</h6>
+						  	<form class="px-4 pb-2">
+						  		<div class="form-group">
+							    	<input type="number" class="form-control" id="exampleDropdownFormEmail1" placeholder="1,6">
+							    </div>
+							    <button type="submit" class="btn btn-primary">Изменить</button>
+							</form>
+						  </div>
+						</div>
+					  </dd>
+
+					  <dt class="col-sm-5">Длина ткани:</dt>
+					  <dd class="col-sm-7">
+						<div class="dropdown">
+						  <button class="btn btn-link dropdown-toggle p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    22 м
+						  </button>
+						  <div class="dropdown-menu bg-light" aria-labelledby="dropdownMenuButton">
+						  	<h6 class="dropdown-header">Введите новый размер</h6>
+						  	<form class="px-4 pb-2">
+						  		<div class="form-group">
+							    	<input type="number" class="form-control" id="exampleDropdownFormEmail1" placeholder="22">
+							    </div>
+							    <button type="submit" class="btn btn-primary">Изменить</button>
+							</form>
+						  </div>
+						</div>
+					  </dd>
+					</dl>
+
+					<div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+						<div class="dropdown mr-2">
+						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    Расход
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						    <li class="dropdown-item disabled">За день: <strong class="text-info">150 м</strong></li>
+						    <li class="dropdown-item disabled">За месяц: <strong class="text-info">568 м</strong></li>
+						    <li class="dropdown-item disabled">За квартал: <strong class="text-info">2005 м</strong></li>
+						    <li class="dropdown-item disabled">За год: <strong class="text-info">2005 м</strong></li>
+						  </ul>
+						</div>
+						<div class="btn-group" role="group" aria-label="First group">
+					    	<a href="#" class="btn btn-danger">Удалить</a>
+					    </div>
+					</div>
+			  	</div>
+			</div> -->
+        </div>
+    </main>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+	<script src="js/common.js"></script>
+
+
+</body>
+</html>
