@@ -23,6 +23,7 @@
 	<!-- Custom Browsers Color End -->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -31,73 +32,33 @@
 
 	<!-- Custom HTML -->
 
-	<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap shadow">
-		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/admin">ProComfort</a>
-		<input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-	    <div class="dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	        	<i class="fa fa-user"></i>Николай
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#"><i class="fa fa-cog"></i>Настройки</a>
-	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item" href="#"><i class="fa fa-arrow-up"></i>Выйти</a>
-	        </div>
-	    </div>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark shadow">
+		<div class="container">
+			<a class="navbar-brand" href="/admin">ProComfort</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			    <div class="navbar-nav mr-auto justify-content-right">
+			      <a class="nav-item nav-link active" href="diller_index.html">Главная <span class="sr-only">(current)</span></a>
+			      <a class="nav-item nav-link" href="diller_orders.html">Заказы</a>
+			      <a class="nav-item nav-link" href="diller_prices.html">Прайсы</a>
+			    </div>
+			    <div class="dropdown">
+			        <a class="nav-link dropdown-toggle px-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			        	<i class="fa fa-user"></i>Николай
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#"><i class="fa fa-cog"></i>Настройки</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#"><i class="fa fa-arrow-up"></i>Выйти</a>
+			        </div>
+			    </div>
+			</div>
+		</div>
 	</nav>
-	<nav class="col-md-2 d-none d-md-block bg-light sidebar">
-      	<div class="sidebar-sticky">
-            <div class="nav flex-column">
-                <div class="accordion" id="sidebar-accordion">
-
-                    <div class="card">
-						<a href="#" class="card-header">
-                            <span><i class="fa fa-home"></i>Главная</span>
-                        </a>
-                    </div>
-
-                    <div class="card">
-						<a href="#" class="card-header" id="heading1" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                           	<span><i class="fa fa-clipboard"></i>Заказы</span>
-                           	<span class="badge badge-primary py-2">4</span>
-                        </a>
-
-                        <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#sidebar-accordion">
-                            <div class="list-group">
-                                <a class="list-group-item" href="#">Все заказы</a>
-                                <a class="list-group-item" href="#">Добавить заказ</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-						<a href="customers.html" class="card-header">
-                            <span><i class="fa fa-users"></i>Заказчики</span>
-                        </a>
-                    </div>
-
-                    <div class="card">
-                        <a href="#" class="card-header" id="heading3" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                            <span><i class="fa fa-th-list"></i>Склад</span>
-                        </a>
-                        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#sidebar-accordion">
-                            <div class="list-group">
-                            	<a class="list-group-item" href="roll_fabric_storage.html">Ткани рулонные</a>
-                                <a class="list-group-item" href="#">Ткани зебра</a>
-                                <a class="list-group-item" href="vert_fabric_storage.html">Ткани вертикальные</a>
-                                <a class="list-group-item" href="goriz_fabric_storage.html">Лента горизонтальная</a>
-                                <a class="list-group-item" href="metal_storage.html">Металл</a>
-                                <a class="list-group-item" href="furn_storage.html">Фурнитура</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-	<main class="row justify-content-end mt-5">
-        <div class="col-md-10 px-5 py-5">
+	<div class="section main-section">
+		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
 					<div class="card">
@@ -109,10 +70,7 @@
 						    	<dt class="col-sm-6">№ заказа:</dt>
 							  	<dd class="col-sm-6">121</dd>
 
-							  	<dt class="col-sm-6">Заказчик:</dt>
-							  	<dd class="col-sm-6"><a href="customer_1.html">Александр Гоев</a></dd>
-
-							  	<dt class="col-sm-6">Префикс заказчика:</dt>
+							  	<dt class="col-sm-6">Префикс заказа:</dt>
 							  	<dd class="col-sm-6">12</dd>
 
 							  	<dt class="col-sm-6">Вид изделий:</dt>
@@ -146,21 +104,11 @@
 							      <div class="modal-body">
 							      	<div class="row">
 								       	<div class="form-group col-md-6">
-								       		<label for="exampleInputEmail1">Префикс заказчика</label>
+								       		<label for="exampleInputEmail1">Префикс заказа</label>
 										    <input type="text" class="form-control" placeholder="0">
 										</div>
-										<div class="form-group col-md-6">
-											<label for="exampleInputEmail1">Статус</label>
-										    <select class="form-control" id="exampleFormControlSelect1">
-										      <option>Черновик</option>
-										      <option>Ожидает проверку</option>
-										      <option>Приостановлен</option>
-										      <option>В работе</option>
-										      <option>Выполнен</option>
-										    </select>
-									  	</div>
 										<div class="form-group col-md-12">
-											<label for="exampleFormControlTextarea1">Примечание администратора</label>
+											<label for="exampleFormControlTextarea1">Примечание заказчика</label>
 										    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 										</div>
 									</div>
@@ -383,7 +331,7 @@
 											  	</div>
 											  	<div class="form-group col-md-6" id="vert_color">
 											  		<label for="exampleInputEmail1">Цвет ткани</label>
-												    <select class="form-control" id="vert_color_select">
+												    <select class="form-control" id="vert_color_select_id" name="vert_color_select">
 												      <option></option>
 												    </select>
 											  	</div>
@@ -402,7 +350,7 @@
 											</div>
 										  	<hr>
 										  	<div class="form-group row" id="vert_own_color" style="display: none;">
-											  	
+											  	<!-- <div class=\"input-group input-group-sm mb-3 col-md-12\"><div class=\"input-group-prepend\"><span class=\"input-group-text\" id=\"basic-addon1\">"+i+"</span></div><select class=\"form-control\" id=\"exampleFormControlSelect1\"><option> </option><option>Лайн</option><option>Кельн</option><option>Мальта</option></select><select class=\"form-control\" id=\"exampleFormControlSelect2\"><option> </option><option>1354</option><option>4663</option></select></div> -->
 											</div>
 									      </div>
 									      <div class="modal-footer">
@@ -953,14 +901,17 @@
 					</div>
 				</div>
 			</div>
-        </div>
-    </main>
+		</div>
+	</div>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
-	<script src="js/scripts.min.js"></script>
+	<script src="js/common.js"></script>
 
 
 </body>
