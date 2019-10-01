@@ -60,59 +60,39 @@
 	<div class="section main-section">
 		<div class="container">
 			<h2 class="mb-3">Заказы</h2>
-			<div class="row mb-2">
-				<div class="input-group col-md-2">
-				  	<div class="form-group">
-					    <select class="form-control" id="exampleFormControlSelect1">
-					      <option>Вид изделий...</option>
-					      <option>Рулонные Mini</option>
-					      <option>Рулонные UNI-1</option>
-					      <option>Рулонные UNI-2</option>
-					      <option>Рулонные D-25</option>
-					      <option>Зебра Mini</option>
-					      <option>Зебра UNI-1</option>
-					      <option>Зебра UNI-2</option>
-					      <option>Зебра MGS</option>
-					      <option>Вертикальные</option>
-					      <option>Горизонтальные</option>
-					    </select>
-					</div>
-				</div>
-				<div class="input-group col-md-2">
-				  	<div class="form-group">
-					    <select class="form-control" id="exampleFormControlSelect1">
-					      <option>Статус...</option>
-					      <option>Черновик</option>
-					      <option>Ожидает проверку</option>
-					      <option>Приостановлен</option>
-					      <option>В работе</option>
-					      <option>Выполнен</option>
-					      <option>Ожидает отправку</option>
-					      <option>Отправлен</option>
-					    </select>
-					</div>
-				</div>
-				<!-- Button trigger modal -->
-				<div class="input-group mb-3 col-md-3">
-					<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
-						Создать заказ
-					</button>
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<div class="card-body">
+							<dl class="row">
+							  	<dt class="col-md-9">Все заказы:</dt>
+							  	<dd class="col-md-3">139</dd>
 
-					<!-- Modal -->
-					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-					  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalLongTitle">Создание заказа</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-							<div class="form-group">
-							    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Префикс заказа">
-							</div>
-							<div class="form-group">
+							  	<dt class="col-md-9">Черновики:</dt>
+							  	<dd class="col-md-3">2</dd>
+
+							  	<dt class="col-md-9">Ожидает проверку:</dt>
+							  	<dd class="col-md-3">100</dd>
+
+							  	<dt class="col-md-9">Приостановлен:</dt>
+							  	<dd class="col-md-3">4</dd>
+
+							  	<dt class="col-md-9">В работе:</dt>
+							  	<dd class="col-md-3">4</dd>
+
+							  	<dt class="col-md-9">Ожидает отправку:</dt>
+							  	<dd class="col-md-3">4</dd>
+
+							  	<dt class="col-md-9">Отправлен:</dt>
+							  	<dd class="col-md-3">4</dd>
+		 					</dl>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="row mb-2">
+						<div class="input-group col-md-3">
+						  	<div class="form-group">
 							    <select class="form-control" id="exampleFormControlSelect1">
 							      <option>Вид изделий...</option>
 							      <option>Рулонные Mini</option>
@@ -127,66 +107,119 @@
 							      <option>Горизонтальные</option>
 							    </select>
 							</div>
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-primary">Создать</button>
-					      </div>
-					    </div>
-					  </div>
+						</div>
+						<div class="input-group col-md-3">
+						  	<div class="form-group">
+							    <select class="form-control" id="exampleFormControlSelect1">
+							      <option>Статус...</option>
+							      <option>Черновик</option>
+							      <option>Ожидает проверку</option>
+							      <option>Приостановлен</option>
+							      <option>В работе</option>
+							      <option>Выполнен</option>
+							      <option>Ожидает отправку</option>
+							      <option>Отправлен</option>
+							    </select>
+							</div>
+						</div>
+						<!-- Button trigger modal -->
+						<div class="input-group mb-3 col-md-3">
+							<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
+								Создать заказ
+							</button>
+
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLongTitle">Создание заказа</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+									<div class="form-group">
+									    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Префикс заказа">
+									</div>
+									<div class="form-group">
+									    <select class="form-control" id="exampleFormControlSelect1">
+									      <option>Вид изделий...</option>
+									      <option>Рулонные Mini</option>
+									      <option>Рулонные UNI-1</option>
+									      <option>Рулонные UNI-2</option>
+									      <option>Рулонные D-25</option>
+									      <option>Зебра Mini</option>
+									      <option>Зебра UNI-1</option>
+									      <option>Зебра UNI-2</option>
+									      <option>Зебра MGS</option>
+									      <option>Вертикальные</option>
+									      <option>Горизонтальные</option>
+									    </select>
+									</div>
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-primary">Создать</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
 					</div>
+					<table class="table table-hover">
+					  <thead>
+					    <tr>
+					      <th scope="col">№ заказа</th>
+					      <th scope="col">Префикс заказа</th>
+					      <th scope="col">Вид изделий</th>
+					      <th scope="col">Дата создания</th>
+					      <th scope="col">Статус</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row"><a href="diller_order_1.html">121</a></th>
+					      <td>12</td>
+					      <td>Вертикальные</td>
+					      <td>29.09.2019</td>
+					      <td class="table-warning">В работе</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">231</th>
+					      <td>16В</td>
+					      <td>Рулонные Mini</td>
+					      <td>29.09.2019</td>
+					      <td class="table-secondary">Черновик</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">331</th>
+					      <td>54</td>
+					      <td>Зебра UNI-2</td>
+					      <td>29.09.2019</td>
+					      <td class="table-success">Выполнен</td>
+					    </tr>
+					  </tbody>
+					</table>
+					<nav aria-label="Page navigation example">
+					  <ul class="pagination">
+					    <li class="page-item">
+					      <a class="page-link" href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+					    <li class="page-item"><a class="page-link" href="#">2</a></li>
+					    <li class="page-item"><a class="page-link" href="#">3</a></li>
+					    <li class="page-item">
+					      <a class="page-link" href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>
 				</div>
 			</div>
-			<table class="table table-hover">
-			  <thead>
-			    <tr>
-			      <th scope="col">№ заказа</th>
-			      <th scope="col">Префикс заказа</th>
-			      <th scope="col">Вид изделий</th>
-			      <th scope="col">Дата создания</th>
-			      <th scope="col">Статус</th>
-			    </tr>
-			  </thead>
-			  <tbody>
-			    <tr>
-			      <th scope="row"><a href="diller_order_1.html">121</a></th>
-			      <td>12</td>
-			      <td>Вертикальные</td>
-			      <td>29.09.2019</td>
-			      <td class="table-warning">В работе</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">231</th>
-			      <td>16В</td>
-			      <td>Рулонные Mini</td>
-			      <td>29.09.2019</td>
-			      <td class="table-secondary">Черновик</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">331</th>
-			      <td>54</td>
-			      <td>Зебра UNI-2</td>
-			      <td>29.09.2019</td>
-			      <td class="table-success">Выполнен</td>
-			    </tr>
-			  </tbody>
-			</table>
-			<nav aria-label="Page navigation example">
-			  <ul class="pagination">
-			    <li class="page-item">
-			      <a class="page-link" href="#" aria-label="Previous">
-			        <span aria-hidden="true">&laquo;</span>
-			      </a>
-			    </li>
-			    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-			    <li class="page-item"><a class="page-link" href="#">2</a></li>
-			    <li class="page-item"><a class="page-link" href="#">3</a></li>
-			    <li class="page-item">
-			      <a class="page-link" href="#" aria-label="Next">
-			        <span aria-hidden="true">&raquo;</span>
-			      </a>
-			    </li>
-			  </ul>
-			</nav>
+			
 		</div>
 	</div>
 
